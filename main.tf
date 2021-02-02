@@ -12,7 +12,7 @@ terraform {
     organization = "AWS_Automated"
 
     workspaces {
-      name = "GitHub-Integration"
+      name = "gh-actions-demo"
     }
   }
 }
