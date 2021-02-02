@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "AWS_"
+    organization = "AWS_Automated"
 
     workspaces {
       name = "GitHub-Integration"
@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-2"
 }
 
 provider "random" {}
