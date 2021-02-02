@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-west-2"
 }
 
 provider "random" {}
@@ -26,7 +26,7 @@ provider "random" {}
 resource "random_pet" "sg" {}
 
 resource "aws_instance" "web" {
-  ami                    = "ami-06bf54a3407e2fed4"
+  ami                    = "ami-830c94e3"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.web-sg.id]
 
