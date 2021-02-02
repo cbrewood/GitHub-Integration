@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "AWS_"
+    organization = "AWS_Automated"
 
     workspaces {
       name = "GitHub-Integration"
