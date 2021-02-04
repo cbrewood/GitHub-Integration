@@ -9,10 +9,10 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "eu-west-2"
+  region  = "eu-west-1"
 }
 
-resource "aws_instance" "eu-west-2" {
+resource "aws_instance" "eu-west-1" {
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
 }
