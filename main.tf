@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
   ami           = var.amis [var.region]
   instance_type = "t2.micro"
 }
-,
+
 terraform
 
 module "vpc" {
