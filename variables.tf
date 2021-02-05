@@ -1,7 +1,7 @@
 variable "region" {
   type = map
   default = {
-  region = "us-west-2"
+  us-west-2
 }
 }
 
