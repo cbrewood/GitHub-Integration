@@ -1,7 +1,3 @@
 variable "region" {
-  type = map
-  default = {
-   "us-west-2" 
+  default = "us-west-2"
 }
-}
-
