@@ -17,6 +17,8 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 ,
+terraform
+
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
