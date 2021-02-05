@@ -1,5 +1,4 @@
  terraform {
-  region = "us-west-1"
 }
 
 module "vpc" {
