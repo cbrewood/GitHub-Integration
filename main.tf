@@ -17,8 +17,14 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 
-terraform
-
+terraform {
+    required_providers {
+        aws = {
+        source  = "hashicorp/aws"
+        version = "~> 2.70"
+        }
+        }
+        }
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
