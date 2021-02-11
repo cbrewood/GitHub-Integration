@@ -8,3 +8,4 @@ variable "amis" {
     "us-west-2" = "ami-fc0b939c"
   }
 }
+
