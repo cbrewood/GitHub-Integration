@@ -6,32 +6,15 @@ terraform {
     }
   }
  }
- terraform {
-    east = {
-      source  = "hashicorp/aws"
-      version = "~> 3.10.0"
-      }
-      }
-
 
 provider "aws" {
   profile = "default"
   region  = "us-west-2"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
+  resource "aws_vpc" "vpc1" {
+  cidr_block = "10.1.0.0/16"
 }
 
-provider "aws" {
-  alias  = "east"
-  region = "us-east-1"
-}
-
-resource "east_instance" "us-east-1" {
-  ami           = "ami-b374d5a5"
-  instance_type = "t2.micro"
-}
 
 
