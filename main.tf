@@ -25,3 +25,11 @@ resource "aws_vpc_peering_connection" "us-west-2-vpc1-vpc2" {
   vpc_id        = aws_vpc.us-west-2-vpc2.id
 }
 
+provider "aws" {
+  alias = "east"
+  region  = "us-east-1"
+}
+
+  resource "aws_vpc" "us-east-1-vpc1" {
+  cidr_block = "10.3.0.0/16"
+}
