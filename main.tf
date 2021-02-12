@@ -7,11 +7,9 @@ terraform {
   }
  }
  terraform {
-  required_providers {
     east = {
       source  = "hashicorp/aws"
       version = "~> 3.10.0"
-      }
       }
       }
 
