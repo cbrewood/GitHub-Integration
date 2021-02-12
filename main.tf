@@ -5,6 +5,11 @@ terraform {
       version = "~> 3.10.0"
     }
   }
+
+      east = {
+      source  = "hashicorp/aws"
+      version = "~> 3.10.0"
+    }
 }
 
 
@@ -19,7 +24,6 @@ resource "aws_instance" "example" {
 }
 
 provider "aws" {
-  alias  = "east"
   region = "us-east-1"
 }
 
