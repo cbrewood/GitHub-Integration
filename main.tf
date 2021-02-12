@@ -28,7 +28,7 @@ resource "aws_vpc_peering_connection" "us-west-2-vpc1-vpc2" {
 resource "aws_route" "main" {
   route_table_id            = "rtb-02686fda432855b23"
   destination_cidr_block    = "10.2.0.0/16"
-  vpc_peering_connection_id = "us-west-2-vpc1-vpc2"
+  vpc_peering_connection_id = "pcx-0111b79bac5ca9b65"
   }
 
 provider "aws" {
