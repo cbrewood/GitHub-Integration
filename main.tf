@@ -18,11 +18,11 @@ resource "aws_instance" "example" {
 }
 
 provider "aws" {
-  alias = "east"
+  alias  = "east"
   region = "us-east-1"
 }
 
 resource "aws_instance" "us-east-1" {
-  ami           = "ami-0fcb9148d9ae606c0"
+  ami           = "ami-b374d5a5"
   instance_type = "t2.micro"
 }
