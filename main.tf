@@ -16,3 +16,13 @@ provider "aws" {
   ami           = "ami-b374d5a5"
   instance_type = "t2.micro"
 }
+
+provider "aws" {
+  alias  = "west"
+  region = "us-west-2"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
+}
