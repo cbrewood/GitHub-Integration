@@ -5,13 +5,16 @@ terraform {
       version = "~> 3.10.0"
     }
   }
-  {
-      east = {
+ }
+ terraform {
+  required_providers {
+    east = {
       source  = "hashicorp/aws"
       version = "~> 3.10.0"
-    }
-}
-}
+      }
+      }
+      }
+
 
 provider "aws" {
   profile = "default"
