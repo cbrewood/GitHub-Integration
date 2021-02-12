@@ -21,6 +21,6 @@ provider "aws" {
 }
 
 resource "aws_vpc_peering_connection" "vpc1-vpc2" {
-  peer_vpc_id   = vpc1
-  vpc_id        = vpc2
+  peer_vpc_id   = aws_vpc.vpc1
+  vpc_id        = aws_vpc.vpc2
 }
